@@ -1,0 +1,469 @@
+
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-image: url(); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+/* Dark mode styling */
+body.dark-mode {
+  background-color: #333;
+  color: #ffffff;
+}
+
+nav.dark-mode {
+  background-color: #111;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #ff0077a8;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+#welcome h1 {
+  color: red;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#welcome img {
+  border-radius: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Profile section styling */
+.profile {
+  text-align: center;
+  padding: 40%;
+  font-size: 50%;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color:cyan;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile image styling */
+/* Profile image styling */
+.profile img {
+  max-width: 200px;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 5px solid #ff0077a8; /* Your desired border color */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover effect for the profile image */
+.profile img:hover {
+  transform: rotate(360deg) scale(1.2); /* Your desired hover effect */
+  filter: grayscale(20%) brightness(120%); /* Add a grayscale effect and increase brightness on hover */
+}
+
+
+
+/* Other section styling (About, Education, Achievements, Skills, Blog, Social Media) */
+div[id^="welcome"],
+div[id^="profile"],
+div[id^="about"],
+div[id^="education"],
+div[id^="achievements"],
+div[id^="skills"],
+div[id^="blog"],
+div[id^="social-media"] {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fafaf8;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode styles */
+body.dark-mode div[id^="welcome"],
+body.dark-mode div[id^="profile"],
+body.dark-mode div[id^="about"],
+body.dark-mode div[id^="education"],
+body.dark-mode div[id^="achievements"],
+body.dark-mode div[id^="skills"],
+body.dark-mode div[id^="blog"],
+body.dark-mode div[id^="social-media"] {
+  background-color: #333;
+  color: white;
+}
+
+/* Adjust text color for social icons */
+.social-icons a {
+  margin: 0 10px;
+  font-size: 30px;
+  color: red;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover color for social icons */
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Toggle button styling */
+#theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #ff9900;
+}
+/* Welcome section styling */
+/* Skills section styling */
+#skills {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fafaf8;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill entry styling */
+.skill-entry {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Skill symbol styling */
+.skill-entry i {
+  font-size: 36px; /* Adjust the size as needed */
+  margin-right: 10px;
+  color: #ff006a; /* Your desired color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for skill symbols */
+.skill-entry i:hover {
+  color: #007bff; /* Your hover color */
+  transform: scale(1.1);
+}
+
+/* Skill text styling */
+.skill-entry h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+/* Achievements section styling */
+#achievements {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fafaf8;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Achievement article styling */
+article {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #e5f7ea; /* Your desired background color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for achievement articles */
+article:hover {
+  background-color: #c2e1c2; /* Your hover background color */
+}
+
+/* Achievement title styling */
+article h2 {
+  color: #007bff; /* Your desired title color */
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Achievement description styling */
+article p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Info text styling */
+.info {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+}
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode nav {
+  background-color: #111;
+}
+
+body.dark-mode nav a {
+  color: #fff;
+}
+
+
+body.dark-mode .social-icons a {
+  color: #ff006a;
+}
+
+body.dark-mode .social-icons a:hover {
+  color: #007bff;
+}
+
+body.dark-mode #theme-toggle {
+  background-color: #007bff;
+  color: #fff;
+}
+
+body.dark-mode #theme-toggle:hover {
+  background-color: #ff9900;
+}
+
+/* Dark mode for Skills section */
+body.dark-mode #skills {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .skill-entry i {
+  color: #ff006a;
+}
+
+body.dark-mode .skill-entry i:hover {
+  color: #007bff;
+}
+
+/* Dark mode for Achievements section */
+body.dark-mode #achievements {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode article {
+  background-color: #1a1a1a; /* Your desired dark background color */
+}
+
+body.dark-mode article:hover {
+  background-color: #333333; /* Your desired dark hover background color */
+}
+
+body.dark-mode article h2 {
+  color: #007bff; /* Your desired title color */
+}
+
+body.dark-mode article p {
+  color: #ddd; /* Your desired text color */
+}
+
+body.dark-mode .info {
+  color: #999; /* Your desired info text color */
+}
+
+#achievements,
+div[id^="education"],
+div[id^="skills"] {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fafaf8;
+}
+
+/* Common styling for Achievement article, Skill entry, and Education/Skill entry */
+article,
+.skill-entry {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for common sections */
+article:hover,
+.skill-entry:hover {
+  background-color: #c2e1c2; /* Your hover background color */
+}
+
+/* Title styling for common sections */
+article h2,
+.skill-entry h2 {
+  color: #007bff; /* Your desired title color */
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Description styling for common sections */
+article p,
+.skill-entry p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Info text styling for common sections */
+.info {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+
+
+/* Education section styling */
+div[id^="education"] {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fafaf8;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Education entry styling */
+.education-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Education title styling */
+.education-entry h2 {
+  color: #007bff; /* Your desired title color */
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Education details styling */
+.education-entry p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Dark mode for Education section */
+body.dark-mode div[id^="education"] {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode .education-entry h2 {
+  color: #007bff; /* Your desired title color */
+}
+
+body.dark-mode .education-entry p {
+  color: #ddd; /* Your desired text color */
+}
+/* Social Media section styling */
+/* Social Media section styling */
+div[id^="social-media"] {
+  text-align: center;
+  padding: 40px;
+  font-size: 24px;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fafaf8;
+}
+
+/* Social icons styling */
+.social-icons a {
+  font-size: 40px;
+  margin: 0 15px;
+  color: #ff00ff; /* Your desired icon color */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 98, 0.5); /* Initial box shadow */
+}
+
+/* Hover effect for social icons */
+.social-icons a:hover {
+  transform: rotate(360deg) scale(1.2); /* Rotation and scale on hover */
+  color: #00ffaaa8; /* Hover color */
+  box-shadow: 0 0 20px rgba(255, 0, 149, 0.8); /* Enhanced box shadow on hover */
+}
+.interaction {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.like-btn, .comment-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
